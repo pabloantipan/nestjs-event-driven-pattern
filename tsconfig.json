@@ -24,6 +24,7 @@
       "@controllers/*": ["src/controllers/*"],
       "@constants/*": ["src/constants/*"],
       "@decorators/*": ["src/decorators/*"],
+      "@domain/*": ["src/domain/*"],
       "@dtos/*": ["src/dtos/*"],
       "@entities/*": ["src/domain/entities/*"],
       "@exceptions/*": ["src/exceptions/*"],
