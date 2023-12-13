@@ -9,7 +9,8 @@ import { Injectable } from '@nestjs/common';
 export class UserMongoRepository implements UserRepository {
   // constructor(@InjectRepository(User) private readonly userRepository: MongoRepository<User>) { }
 
-  async save(user: User): Promise<void> {
+  async save(user: User): Promise<any> {
+    console.log('UserMongoRepository.save()');
     // await this.userRepository.save(user);
     return;
   }

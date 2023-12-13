@@ -9,6 +9,7 @@ export class EventBusService {
   constructor() { }
 
   publish<T>(event: T): void {
+    console.log(`EventBusService.publish()`);
     this.subject.next(event);
   }
 

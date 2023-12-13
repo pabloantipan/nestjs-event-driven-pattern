@@ -8,7 +8,7 @@ export class UserController {
     private readonly registerUserUseCase: RegisterUserUseCase,
   ) { }
 
-  @Post('/register')
+  @Post('register')
   public async register(@Body() body: UserRegistrationDto) {
     const { email, username, password } = body;
 
