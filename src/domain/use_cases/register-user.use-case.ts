@@ -11,7 +11,11 @@ export class RegisterUserUseCase {
     // ... (e.g., email format, username length)
 
     try {
-      await this.userRegisterService.registerUser(userRegistrationDto.email, userRegistrationDto.username);
+      await this.userRegisterService.registerUser(
+        userRegistrationDto.email,
+        userRegistrationDto.username,
+        userRegistrationDto.password,
+      );
     } catch (error) {
       // Handle potential errors during registration
       // ... (e.g., user already exists, database error)
