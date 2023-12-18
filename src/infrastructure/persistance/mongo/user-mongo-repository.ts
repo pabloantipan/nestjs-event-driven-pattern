@@ -3,6 +3,7 @@ import { UserRepository } from '@domain/repositories/user-repository.interface';
 import { User, UserEntity } from '@entities/user.entity';
 import { Injectable } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
+import { MongoBulkWriteError } from 'mongodb';
 import { MongoRepository } from 'typeorm';
 
 @Injectable()
@@ -15,7 +16,11 @@ export class UserMongoRepository implements UserRepository {
     // this.userRepository.create(user);
     return await this.userRepository.save(user)
       .catch((error) => {
-        console.log('UserMongoRepository.save() error', error);
+        console.log(error.constructor.name)
+        if (error instanceof MongoBulkWriteError) {
+          console.log('here')
+        }
+        // console.log('UserMongoRepository.save() error', error);
       });
   }
 
