@@ -1,6 +1,5 @@
 import { UserEntity } from '@domain/entities/user.entity';
 import { RegisterUserUseCase } from '@domain/use_cases/register-user.use-case';
-import { ErrorHandlingService } from '@infrastructure/errors/error-handling.service';
 import { EventBusService } from '@infrastructure/events/event-bus.service';
 import { UserController } from '@infrastructure/http/controllers/user-controller';
 import { UserRegisterService } from '@infrastructure/http/services/user-register-service';
@@ -42,8 +41,6 @@ import { AppService } from './app.service';
     RegisterUserUseCase,
     UserMongoRepository,
     MongoRepository,
-    ErrorHandlingService,
-
   ],
 })
 export class AppModule { }
