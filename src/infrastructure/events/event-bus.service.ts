@@ -1,4 +1,4 @@
-import { Event, EventType } from '@entities/event';
+import { Event, EventType } from '@domain/interfaces/event.interface';
 import { Injectable } from '@nestjs/common';
 import { Observable, Subject, filter, map } from 'rxjs';
 

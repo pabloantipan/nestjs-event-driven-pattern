@@ -1,4 +1,4 @@
-import { EventType, UserLoggingEvent } from '@domain/entities/event';
+import { EventType, UserLoggingEvent } from '@domain/interfaces/event.interface';
 import { ErrorBusService } from '@infrastructure/errors/error-bus';
 import { EventBusService } from '@infrastructure/events/event-bus.service';
 import { Injectable } from '@nestjs/common';

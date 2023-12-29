@@ -1,4 +1,4 @@
-import { UserRegisteredEvent } from '@entities/event';
+import { UserRegisteredEvent } from '@domain/interfaces/event.interface';
 import { Injectable } from '@nestjs/common';
 import { OnEvent } from '@nestjs/event-emitter';
 // import { UserRegisteredEvent } from 'domain/events/user-registered.event';
