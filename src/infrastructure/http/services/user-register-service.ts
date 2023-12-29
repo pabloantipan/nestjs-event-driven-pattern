@@ -1,5 +1,5 @@
+import { User } from '@domain/classes/user';
 import { UserRegisteredEvent } from '@entities/event';
-import { User } from '@entities/user.entity';
 import { EventBusService } from '@infrastructure/events/event-bus.service';
 import { UserMongoRepository } from '@infrastructure/persistance/mongo/user-mongo-repository';
 import { Injectable } from '@nestjs/common';

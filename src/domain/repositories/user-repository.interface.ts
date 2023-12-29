@@ -1,4 +1,4 @@
-import { User } from '@entities/user.entity';
+import { User } from "@domain/classes/user";
 
 export interface UserRepository {
 

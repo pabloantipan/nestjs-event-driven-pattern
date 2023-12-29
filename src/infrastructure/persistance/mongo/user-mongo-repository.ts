@@ -1,6 +1,7 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
+import { User } from '@domain/classes/user';
+import { UserEntity } from '@domain/entities/user.entity';
 import { UserRepository } from '@domain/repositories/user-repository.interface';
-import { User, UserEntity } from '@entities/user.entity';
 import { Injectable } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { MongoBulkWriteError, MongoError } from 'mongodb';
